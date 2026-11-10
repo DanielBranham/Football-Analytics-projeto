@@ -1,0 +1,392 @@
+/* ==========================================
+   FOOTBALL ANALYTICS
+   IDENTIDADE VISUAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0B1120;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+header {
+    background-color: #111827;
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid #263449;
+}
+
+.logo h1 {
+    color: #45D6A0;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #CBD5E1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #45D6A0;
+}
+
+
+/* ==========================================
+   APRESENTAÇÃO
+========================================== */
+
+.hero {
+    padding: 100px 6%;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #12332B
+    );
+}
+
+.hero h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #45D6A0;
+}
+
+.hero p {
+    color: #CBD5E1;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.hero .temporada {
+    color: #45D6A0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 25px;
+}
+
+
+/* ==========================================
+   SEÇÕES
+========================================== */
+
+section {
+    padding: 60px 6%;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+section > p {
+    color: #94A3B8;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   VISÃO GERAL
+========================================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #172033;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #263449;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #45D6A0;
+}
+
+.card h3 {
+    color: #94A3B8;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #45D6A0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   COMPETIÇÕES
+========================================== */
+
+#listaCompeticoes {
+    margin-top: 25px;
+}
+
+#listaCompeticoes .card {
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   CLUBES E JOGADORES
+========================================== */
+
+#listaClubes,
+#listaJogadores {
+    background-color: #111827;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    padding: 25px;
+    min-height: 100px;
+    color: #94A3B8;
+}
+
+#listaJogadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-jogador {
+    background-color: #172033;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card-jogador:hover {
+    border-color: #45D6A0;
+    transform: translateY(-4px);
+}
+
+.card-jogador h3 {
+    color: #45D6A0;
+    margin-bottom: 10px;
+}
+
+.card-jogador p {
+    color: #CBD5E1;
+    margin-top: 8px;
+}
+
+
+/* ==========================================
+   RANKINGS
+========================================== */
+
+.filtro-ranking {
+    margin-bottom: 25px;
+}
+
+.filtro-ranking label {
+    display: block;
+    color: #CBD5E1;
+    margin-bottom: 10px;
+}
+
+select {
+    background-color: #172033;
+    color: #FFFFFF;
+    border: 1px solid #45D6A0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.area-rankings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ranking {
+    background-color: #111827;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    padding: 25px;
+    min-height: 180px;
+}
+
+.ranking h3 {
+    color: #45D6A0;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   DESTAQUES
+========================================== */
+
+#destaquesCompeticoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* ==========================================
+   SELEÇÃO 4-3-3
+========================================== */
+
+#selecao433 {
+    background-color: #111827;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    padding: 30px;
+    min-height: 250px;
+}
+
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+footer {
+    background-color: #111827;
+    border-top: 1px solid #263449;
+    padding: 35px;
+    text-align: center;
+    color: #94A3B8;
+    line-height: 1.9;
+}
+
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #listaJogadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .area-rankings,
+    #destaquesCompeticoes {
+        grid-template-columns: 1fr;
+    }
+
+    #listaJogadores {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+}
+
+/* ==========================================
+   DESTAQUES DAS COMPETIÇÕES
+========================================== */
+
+.card-destaque {
+    background-color: #172033;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card-destaque:hover {
+    border-color: #45D6A0;
+    transform: translateY(-4px);
+}
+
+.card-destaque h3 {
+    color: #45D6A0;
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.destaque-label {
+    color: #94A3B8;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.destaque-jogador {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.destaque-numero {
+    color: #45D6A0;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.card-destaque hr {
+    border: none;
+    border-top: 1px solid #263449;
+    margin: 18px 0;
+}

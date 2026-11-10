@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Football Analytics | Estatísticas do Futebol</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            <h1>⚽ Football Analytics</h1>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#competicoes">Competições</a>
+            <a href="#clubes">Clubes</a>
+            <a href="#jogadores">Jogadores</a>
+            <a href="#rankings">Rankings</a>
+            <a href="#selecao">Seleção 4-3-3</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section id="inicio" class="hero">
+
+            <h2>O futebol em números.</h2>
+
+            <p>
+                Explore estatísticas, analise, desempenho
+                e descubra os números por trás do futebol.
+            </p>
+
+            <p class="temporada">
+                TEMPORADA 2026/27
+            </p>
+
+        </section>
+
+
+        <!-- VISÃO GERAL -->
+        <section class="estatisticas">
+
+            <h2>Visão Geral</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Clubes</h3>
+                    <p id="totalClubes">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Jogadores</h3>
+                    <p id="totalJogadores">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Gols</h3>
+                    <p id="totalGols">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Partidas</h3>
+                    <p id="totalPartidas">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPETIÇÕES -->
+        <section id="competicoes">
+
+            <h2>Competições</h2>
+
+            <p>
+                Acompanhe os principais campeonatos
+                do futebol nacional e internacional.
+            </p>
+
+            <div id="listaCompeticoes" class="cards">
+
+                <!-- Competições adicionadas pelo JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- CLUBES -->
+        <section id="clubes">
+
+            <h2>Estatísticas dos Clubes</h2>
+
+            <div id="listaClubes">
+
+                <!-- Clubes adicionados pelo JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- JOGADORES -->
+        <section id="jogadores">
+
+            <h2>Estatísticas dos Jogadores</h2>
+
+            <div id="listaJogadores">
+
+                <!-- Jogadores adicionados pelo JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- RANKINGS -->
+        <section id="rankings">
+
+            <h2>Rankings da Temporada</h2>
+
+            <div class="filtro-ranking">
+
+                <label for="seletorCompeticao">
+                    Escolha uma competição:
+                </label>
+
+                <select id="seletorCompeticao">
+
+                    <option value="premierLeague">
+                        Premier League
+                    </option>
+
+                    <option value="laLiga">
+                        La Liga
+                    </option>
+
+                    <option value="bundesliga">
+                        Bundesliga
+                    </option>
+
+                    <option value="serieA">
+                        Serie A
+                    </option>
+
+                    <option value="ligue1">
+                        Ligue 1
+                    </option>
+
+                    <option value="brasileirao">
+                        Brasileirão
+                    </option>
+
+                    <option value="championsLeague">
+                        Champions League
+                    </option>
+
+                    
+
+                </select>
+
+            </div>
+
+
+            <div class="area-rankings">
+
+                <div class="ranking">
+
+                    <h3>🏆 Artilharia</h3>
+
+                    <div id="rankingGols">
+
+                        Aguardando dados dos jogadores.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ranking">
+
+                    <h3>🎯 Assistências</h3>
+
+                    <div id="rankingAssistencias">
+
+                        Aguardando dados dos jogadores.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESTAQUES -->
+        <section id="destaques">
+
+            <h2>Destaques das Competições</h2>
+
+            <div id="destaquesCompeticoes">
+
+                <!-- Artilheiros e líderes de assistências -->
+
+            </div>
+
+        </section>
+
+
+        <!-- SELEÇÃO DA TEMPORADA -->
+        <section id="selecao">
+
+            <h2>Seleção da Temporada</h2>
+
+            <p>
+                Os melhores jogadores da temporada
+                organizados em uma formação 4-3-3.
+            </p>
+
+            <div id="selecao433">
+
+                <!-- Os jogadores da seleção serão adicionados pelo JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
+        <footer>
+
+            <p>
+                Football Analytics © 2026
+            </p>
+
+            <p>
+                Desenvolvido para o Mundo SENAI.
+            </p>
+
+            <p>
+                Dados referentes à temporada 2026/27.
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
